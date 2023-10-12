@@ -1,0 +1,82 @@
+<!-- ------JavaScript For Toggle Menu--------->
+<!-- <script>
+
+    var navLinks = document.getElementById("navLinks");
+    // html 도큐먼트에서 #navLinks라는 아이디를 가져와!
+    // 그 아이디를 navLinks라는 변수(var)에 넣어!
+    // 
+    function showMenu(){
+        navLinks.style.display = "block";
+        // #navLinks 찾았지? style(css를 제어할거야) display 속성을 = "block"으로
+
+        // Q. navLinks가 보여질 때 기존 색상은 그린이었다. 블랙으로 바꾸고 싶은데 어떻게 바꿔야할까?
+        
+        // 1. 바꿔야 하는 태그를 먼저 찾아야겠지
+        // navLinks
+
+        // 2. 태그의 style을 제어할거니까
+        // navLinks.style
+        
+        // 3. style 속성은 어떤것으로 바꿔야되나? 배경색상을 바꿀거니까 background 속성을 사용할 것이쥐!
+        // navLinks.style.background
+
+        // 4. 속성 값은 black! 
+        navLinks.style.background = "var(--darkgray)";
+    }
+
+    function hideMenu(){
+        navLinks.style.display = "none";
+    }
+    console.log("양영주도 이제 자바스크립트 한다~~야호!!")
+</scrip> -->
+
+<!-- <script src="index.js"></script> -->
+<!-- 2. body 태그 뒤로 script를 정의해서 순서를 지정해주거나! -->
+
+
+
+
+
+<!-- css -->
+<!-- .nav-links{
+    /* display : none 추가! 평상시엔 안보이는 상태에서 script 로 display를 제어할거니까! 평상시엔 저기 꺼지라 해야함. */
+    display: none;
+    position: absolute;
+    background: var(--green);
+    height: 100vh;
+    width: 12.5rem;
+    top:0;
+    right: 0;
+    text-align: left;
+    z-index: 2;
+    transition: 0.5s;
+} -->
+
+
+
+
+
+
+
+<!-- html -->
+<!-- <script>
+    var navLinks = document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.display = "block";
+    }
+
+    function hideMenu(){
+        // 사이즈에 따라 display를 다르게 제어한 이유?
+        // hideMenu 버튼을 눌러 nav를 숨긴 후 screen크기가 커질 때 nav가 안나타나고 있다.. 
+        // 따라서 740px이상일 때에는 nav가 보여지게끔 설정한 것.
+
+        if(window.innerWidth <= '740'){
+            // screen 크기가 740px 이하일 때, display : none;
+            navLinks.style.display = "none";
+        }else{
+            // screen 크기가 740px 이상일 때, display : block;
+            navLinks.style.display = "block";
+        }
+    }
+</script> -->
