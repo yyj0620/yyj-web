@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My website</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/pretendard.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/d5c7f8adfe.js" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html" class="logo">YYJ</a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()" alt="사이드메뉴닫기버튼"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()" alt="사이드메뉴열기버튼"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+    <!-- ----- about us content ----- -->
+
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the world's Biggest Happy Place</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Magnam, deserunt eum unde eos incidunt maiores debitis dolores 
+                dolor necessitatibus amet dolorem sint nobis pariatur placeat. 
+                Distinctio aut eaque sint itaque! Lorem ipsum dolor, sit amet 
+                consectetur adipisicing elit. 
+                <br>Exercitationem, molestiae cupiditate nulla,minus adipisci 
+                porro nemo vero nisi alias dolores nobis sint nobis pariatur 
+                est atque, sunt inventore quis harum.</p>
+                <a href="" class="hero-btn3">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="images/about.jpg" alt="회사소개사진">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ----footer---- -->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Veniam, laudantium dicta numquam placeat animi mollitia. <br>
+            Eius dicta, necessitatibus quisquam odit ratione voluptatibus.</p> 
+        <div class="icons">
+            <i class="fa fa-brands fa-facebook"></i>
+            <i class="fa fa-brands fa-twitter"></i>
+            <i class="fa fa-brands fa-instagram"></i>
+            <i class="fa fa-solid fa-link"></i>
+        </div>
+        <p>Made with <i class="fa-solid fa-heart"></i> by YYJ</p>
+    </section>
+
+
+<!-- ------JavaScript------ -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu(){
+            navLinks.style.right = "-12.5rem";
+        }
+</script>
+
+</body>
+</html>
