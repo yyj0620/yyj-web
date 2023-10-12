@@ -16,7 +16,7 @@ body {
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(97, 97, 97, 0.3),rgba(97, 97, 97, 0.1)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.3)),
     url(../images/banner.jpg);
     background-position: center;
     background-size: cover;
@@ -32,14 +32,9 @@ nav{
 
 .logo{
     text-decoration: none;
-    color: var(--darkgray);
+    color: var(--wht);
     font-size: 1.813rem;
     font-weight: 800;
-}
-
-.logo:hover{
-    color: var(--wht);
-    transition: 0.5s;
 }
 
 .nav-links{
@@ -55,7 +50,7 @@ nav{
 }
 
 .nav-links ul li a{
-    color: var(--darkgray);
+    color: var(--wht);
     text-decoration: none;
 }
 
@@ -75,7 +70,7 @@ nav{
 
 .text-box{
     width: 90%;
-    color: var(--darkgray);
+    color: var(--wht);
     position: absolute;
     top:50%;
     left: 50%;
@@ -89,15 +84,18 @@ nav{
 }
 
 .text-box p{
-    margin: 1.875rem 0 4rem;
+    margin: 1.875rem 0 2.5rem;
     font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.375rem;
+    padding: 0.625rem;
 }
 
 .hero-btn{
     display: inline-block;
     text-decoration: none;
     font-weight: 600;
-    color: var(--darkgray);
+    color: var(--wht);
     border: 1px solid var(--green);
     padding: 0.875rem 2.125rem;
     background: transparent;
